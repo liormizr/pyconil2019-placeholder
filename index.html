@@ -10,6 +10,19 @@
     a {
       color: #47c6eb;
     }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .box {
+      flex-basis: 0;
+      flex-grow: 1;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .box p {
+      text-align: left;
+    }
   </style>
 <body style="padding-bottom: 50px; background-color: #666; color: #ccc; font-family: Arial, Helvetica, sans-serif; text-align: center">
 
@@ -34,7 +47,8 @@
   5 June Workshops Day
  </h3>
 </div>
-  <div>
+<div class="row">
+  <div class="box">
     <h3>What is Pycon?</h3>
     <p>PyCon Israel is an annual multi-day event focused on the Python programming language, with approximately 700 participants
       from various disciplines.
@@ -43,11 +57,14 @@
       and more.
       In recent years, Python has become a very popular multi-purpose programming language used by many well known international
       companies.</p>
+  </div>
+  <div class="box">
     <h3>Who is it for?</h3>
     <p>The conference is appropriate for all people interested in Python and its uses. There will be talks for beginners as well
       as for more advanced users. A large benefit of attending is meeting the other attendees, speaking to them in a relaxed social
       environment and networking.</p>
   </div>
+</div>
 <div>
   <h3>
     The conference will be held on Wohl center, Bar Ilan University, Max and Anna Web 11 Ramat Gan
